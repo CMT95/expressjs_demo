@@ -5,8 +5,12 @@ const path = __dirname + '/public/';
 
 app.use(bodyParser.urlencoded({extended : true}));
 
+app.use(express.static('wwwroot'));
+
 app.get('/', function (req, res) {
-    res.send('Hello WORLD!');
+    res.sendFile( path +'index.html', function (err) {
+        // handle error
+    });
 });
 
 app.get('/testdigselv', function (req, res) {
@@ -25,7 +29,7 @@ app.post('/login', function (req, res) {
 
     if (req.body.user === 'cihat') 
     {
-        res.sendFile(path + 'secret.html', function (err) {
+        res.sendFile(path + 'start.html', function (err) {
             
         });
     }else
@@ -34,6 +38,17 @@ app.post('/login', function (req, res) {
             // handle error
         });
     }
+});
+
+app.get('/about', function (req, res) {
+    res.sendFile(path + 'about.html', function (err) {
+        //handle error
+    });
+});
+app.get('/contact', function (req, res) {
+    res.sendFile(path + 'contact.html', function (err) {
+        //handle error
+    });
 });
 
 app.listen(3000);
