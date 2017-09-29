@@ -1,3 +1,11 @@
+body{
+    background-color: #eee;
+}
+hr{
+    border-color: black;
+    background-color: black;
+}
+
 #link{
     position: absolute;
     right:0;
@@ -9,89 +17,29 @@
     right: 0;
     margin-right: 300px;
 }
-#top-p{
+#top-h6{
     margin-right: 300px;
 }
-
-.inline{
-    display: inline-block;
-    margin: 10px;
-    left: 0;
+.events img{
+    width: 50px;
+    height: 50px;
 }
-
-#bigContainer{
+.events{
     display: flex;
-    flex-direction: column;
-}
-
-.smallContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-flow: row;
+    flex-wrap: wrap;
     
-
-}#link{
-    position: absolute;
-    right:0;
-    margin-right: 200px;
 }
-
-#subscribe{
-    position: absolute;
-    right: 0;
+.events .event, .centertext {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+}
+.content{
     margin-right: 300px;
 }
-#top-p{
-    margin-right: 300px;
-}
-
-.inline{
-    display: inline-block;
-    margin: 10px;
-    left: 0;
-}
-
-#bigContainer{
+footer{
     display: flex;
-    flex-direction: column;
-}
-
-.smallContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-
-}#link{
-    position: absolute;
-    right:0;
-    margin-right: 200px;
-}
-
-#subscribe{
-    position: absolute;
-    right: 0;
-    margin-right: 300px;
-}
-#top-p{
-    margin-right: 300px;
-}
-
-.inline{
-    display: inline-block;
-    margin: 10px;
-    left: 0;
-}
-
-#bigContainer{
-    display: flex;
-    flex-direction: column;
-}
-
-.smallContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-
+    justify-content: center;
 }

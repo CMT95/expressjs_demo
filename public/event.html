@@ -1,68 +1,92 @@
 <!DOCTYPE HTML>
 <html>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
 <head>
     <title>KEA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
+
 <body>
     <div class="container text-center">
-        <div class="jumbotron">
-            <nav class="margin" id="link">
-                <form action="/about" method="post">
+        <nav class="margin" id="link">
+            <form action="/about" method="post">
                 <a href="about">About</a> |
                 <a href="contact">Contact us</a>
-                </form>
-            </nav>
-        <h1>Welcome to KEA Events</h1>
-        <p id="top-p">Find All the event that are happening at KEA</p>
+            </form>
+        </nav>
+        <section id="top">
+            <h1>Welcome to KEA Events</h1>
+            <h6 id="top-h6">Find All the event that are happening at KEA</h6>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Csccv-oe88o" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Csccv-oe88o" frameborder="0" allowfullscreen></iframe>
 
-        <button class="btn btn-danger" id="subscribe" onclick="location.href = 'https://www.youtube.com/user/KEAkanal';">
+            <button class="btn btn-danger" id="subscribe" onclick="location.href = 'https://www.youtube.com/user/KEAkanal';">
             <i class="fa fa-youtube-play" aria-hidden="true"></i>            
             Subscribe
         </button>
+        </section>
         <hr>
+        <div class="events">
+            <h1 class="centertext" style="margin-bottom: 25px;">Trending right now - join the newsletter for more updates!</h1>
 
-        <h3>Trending right now - join the newsletter for more updates!</h3>
-        <div id="bigContainer">
-            <!-- first img -->
-            <img  src="/img/bridge.jpg" width="50" height="50" alt="">
-            <div class="smallContainer">
-            <img src="/img/img_placeholder.jpeg" width="50" height="50" alt="">
-            <img src="/img/img_placeholder.jpeg" width="50" height="50" alt="">
-            <img src="/img/img_placeholder.jpeg" width="50" height="50" alt="">
+            <div class="event">
+                <div class="content">
+                    <img src="img/map.jpg">
+                    <p>Event 1</p>
+                </div>
+
+                <div class="placeholder">
+                    <img src="img/img_placeholder.jpeg">
+                    <img src="img/img_placeholder.jpeg">
+                    <img src="img/img_placeholder.jpeg">
+                </div>
             </div>
-            <!-- second img -->
-            <img  src="/img/graph.png" width="50" height="50" alt="">
-            <div class="smallContainer">
-            <img src="/img/img_placeholder.jpeg" width="50" height="50" alt="">
-            <img src="/img/img_placeholder.jpeg" width="50" height="50" alt="">
-            <img src="/img/img_placeholder.jpeg" width="50" height="50" alt="">
+
+            <div class="event">
+                <div class="content">
+                    <img src="img/bridge.jpg">
+                    <p>Event 2</p>
+                </div>
+
+                <div class="placeholder">
+                    <img src="img/img_placeholder.jpeg">
+                    <img src="img/img_placeholder.jpeg">
+                    <img src="img/img_placeholder.jpeg">
+                </div>
             </div>
-            <!-- third img -->
-            <div class="smallContainer">
-            <img src="/img/map.jpg" width="50" height="50" alt="">
-            <img src="/img/img_placeholder.jpeg" width="50" height="50" alt="">
-            <img src="/img/img_placeholder.jpeg" width="50" height="50" alt="">
-            <img src="/img/img_placeholder.jpeg" width="50" height="50" alt="">
+
+            <div class="event">
+                <div class="content">
+                    <img src="img/graph.png">
+                    <p>Event 3</p>
+                </div>
+
+                <div class="placeholder">
+                    <img src="img/img_placeholder.jpeg">
+                    <img src="img/img_placeholder.jpeg">
+                    <img src="img/img_placeholder.jpeg">
+                </div>
             </div>
         </div>
+
         <hr>
-        <div>
-            <a class="inline" href="http://www.kea.dk/da/">Go To KEA.DK</a>
-            <p class="inline">Drop us a line!</p>
-            <p class="inline">Become a member</p>
-            <button class="btn btn-info inline" onclick="location.href = 'https://www.youtube.com/user/KEAkanal';">
-                <i class="fa fa-hand-o-right" aria-hidden="true"></i>                
-                See more pages
-            </button>
+        <div id="bottom_info">
+            <form action="/event" method="get">
+                <a href="index">Go to KEA.DK</a> |
+                <a href="#">Drop us a line!</a> |
+                <a href="#">Become a member</a>
+                <button class="btn btn-info inline" onclick="location.href = 'https://www.youtube.com/user/KEAkanal';">
+            <i class="fa fa-hand-o-right" aria-hidden="true"></i>                
+            See more pages
+        </button>
+            </form>
+
         </div>
-        </div>
-        
-        </div>
-    
+        </section>
+    </div>
+    <footer>Copyright &copy; KEA 2017</footer>
 </body>
+
 </html>

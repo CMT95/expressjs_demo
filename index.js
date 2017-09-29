@@ -13,8 +13,11 @@ app.get('/', function (req, res) {
     });
 });
 
-app.get('/testdigselv', function (req, res) {
-    res.send('hello from test')
+
+app.get('/index', function (req, res) {
+    res.sendFile( path +'index.html', function (err) {
+        // handle error
+    });
 });
 
 app.get('/login', function (req, res) {
@@ -29,7 +32,7 @@ app.post('/login', function (req, res) {
 
     if (req.body.user === 'cihat') 
     {
-        res.sendFile(path + 'start.html', function (err) {
+        res.sendFile(path + 'event.html', function (err) {
             
         });
     }else
