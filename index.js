@@ -12,8 +12,6 @@ app.get('/', function (req, res) {
         // handle error
     });
 });
-
-
 app.get('/index', function (req, res) {
     res.sendFile( path +'index.html', function (err) {
         // handle error
